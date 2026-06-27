@@ -1,0 +1,64 @@
+{
+    "name": "@persian-caesar/liquid-glass",
+    "version": "1.0.0",
+    "description": "Liquid Glass effect component for React - Beautiful glassmorphism with displacement distortion.",
+    "author": "Sobhan-SRZA (mr.sinre) & Persian Caesar",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Persian-Caesar/Liquid-Glass.git"
+    },
+    "homepage": "https://github.com/Persian-Caesar/Liquid-Glass#readme",
+    "bugs": {
+        "url": "https://github.com/Persian-Caesar/Liquid-Glass/issues"
+    },
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "sideEffects": false,
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "clean": "rm -rf dist",
+        "prepublishOnly": "npm run clean && npm run build"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.8.0",
+        "tsup": "^8.4.0",
+        "@types/react": "^19.0.0",
+        "@types/react-dom": "^19.0.0"
+    },
+    "keywords": [
+        "react",
+        "component",
+        "reactjs",
+        "ts",
+        "typescript",
+        "liquid",
+        "glass",
+        "liquidglass",
+        "liquid-glass",
+        "glassmorphism",
+        "ui-effect",
+        "displacement",
+        "svg-filter",
+        "persian-caesar",
+        "sobhan-srza",
+        "framer-motion-alternative"
+    ]
+}
