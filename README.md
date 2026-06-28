@@ -4,8 +4,7 @@
 
 A lightweight, performant, and fully customizable React component that creates a stunning liquid glass / fluid glassmorphism effect using SVG filters and canvas-generated displacement maps.
 
-![Liquid Glass Preview](https://via.placeholder.com/800x400?text=Liquid+Glass+Effect)  
-*(Replace with actual screenshot/GIF after adding one)*
+![Liquid Glass Preview](https://github.com/user-attachments/assets/9307852d-d7db-48f8-9038-14458df97051) 
 
 ---
 
