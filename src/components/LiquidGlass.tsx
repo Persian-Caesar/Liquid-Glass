@@ -14,16 +14,16 @@ export interface LiquidGlassProps {
 
     // Customization
     className?: string;
-    style?: React.CSSProperties;           
+    style?: React.CSSProperties;
     children?: React.ReactNode;
 
     // Advanced
-    as?: React.ElementType;                
-    filterId?: string;                    
+    as?: React.ElementType;
+    filterId?: string;
 }
 
 const LiquidGlass: React.FC<LiquidGlassProps> = ({
-    borderRadius = 20,
+    borderRadius = undefined,
     blur = 0.25,
     contrast = 1.2,
     brightness = 1.05,
@@ -158,12 +158,15 @@ const LiquidGlass: React.FC<LiquidGlassProps> = ({
     }, [updateShader]);
 
     const filterStyle: React.CSSProperties = {
-        borderRadius: `${borderRadius}px`,
         backdropFilter: `url(#${id}_filter) blur(${blur}px) contrast(${contrast}) brightness(${brightness}) saturate(${saturation})`,
         boxShadow: shadowIntensity > 0
             ? `0 4px 8px rgba(0, 0, 0, ${shadowIntensity}), 0 -10px 25px inset rgba(0, 0, 0, 0.15)`
             : undefined,
     };
+
+    if (borderRadius) {
+        filterStyle.borderRadius = `${borderRadius}px`;
+    }
 
     return (
         <>
@@ -211,7 +214,7 @@ const LiquidGlass: React.FC<LiquidGlassProps> = ({
                 className={`liquid-glass ${className}`}
                 style={{
                     ...filterStyle,
-                    ...style,         
+                    ...style,
                 }}
             >
                 {children}
