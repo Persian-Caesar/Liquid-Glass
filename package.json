@@ -1,6 +1,6 @@
 {
     "name": "@persian-caesar/liquid-glass",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Liquid Glass effect component for React - Beautiful glassmorphism with displacement distortion.",
     "author": "Sobhan-SRZA (mr.sinre) & Persian Caesar",
     "license": "MIT",
