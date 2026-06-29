@@ -3,9 +3,9 @@ import { LiquidGlass } from '@persian-caesar/liquid-glass';
 export default function App() {
     return (
         <LiquidGlass
-            blur={0.1}
+            blur={0.8}
             displacementScale={0.5}
-            elasticity={0.9}
+            elasticity={0.1}
             shadowIntensity={0.25}
             className="flex flex-col justify-center items-center p-8 fixed top-1/2 left-1/5 rounded-3xl max-w-full min-w-xl max-h-full min-h-50 text-black"
             style={{
